@@ -117,7 +117,7 @@
                 </nav>
                 <main>
                     <h1 class="text-white font-poppins text-2xl m-5">Recommended</h1>
-                    <main class="grid sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 grid-cols-2 xl:ml-5">
+                    <main class="grid justify-items-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 grid-cols-1 xl:ml-5">
                         @foreach ($rekomend as $reko)
                         <a class="w-48" data-popover-target="popover-bottom{{$loop->iteration}}" data-popover-placement="bottom" href="/player/{{$reko->id}}">
                             <div class="mt-5 h-80 w-48 bg-[rgb(26,43,50)] overflow-hidden rounded-lg animate-[pulse_1s_linear]">
@@ -155,7 +155,7 @@
                 </nav>
                 <main>
                     <h1 class="text-white font-poppins text-2xl m-5">All Movies</h1>
-                    <main class="grid sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 grid-cols-2 xl:ml-5">
+                    <main class="grid justify-items-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 grid-cols-1 xl:ml-5">
                         @foreach ($latestmov as $latest)
                         <a class="w-48" data-popover-target="popover-bottom{{$loop->iteration}}{{$loop->iteration}}" data-popover-placement="bottom" href="/player/{{$latest->id}}">
                             <div class="mt-5 h-80 w-48 bg-[rgb(26,43,50)] overflow-hidden rounded-lg animate-[pulse_1s_linear]">

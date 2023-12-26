@@ -28,7 +28,7 @@
             <section class="bg-[rgb(11,17,20)] rounded-xl min-h-screen">
                 <main>
                     <h1 class="text-white font-poppins text-2xl m-5">Your {{$genreSearch}} Genre Result:</h1>
-                    <main class="grid sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 grid-cols-2 xl:ml-5">
+                    <main class="grid justify-items-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 grid-cols-1 xl:ml-5">
                         @foreach ($movieGenre as $movGen)
                         <a class="w-48" data-popover-target="popover-bottom{{$loop->iteration}}" data-popover-placement="bottom" href="/player/{{$movGen->id}}">
                             <div class="mt-5 h-80 w-48 bg-[rgb(26,43,50)] overflow-hidden rounded-lg">
